@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+    body {
+      background-color: #fff8f5;
+      font-family: 'Poppins', sans-serif;
+    }
+    .navbar-custom {
+      background: linear-gradient(90deg, #ff512f, #dd2476);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .navbar-brand {
+      color: #fff !important;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+    .nav-link {
+      color: #fff !important;
+    }
+    .menu-title {
+      text-align: center;
+      margin-top: 40px;
+      color: #dd2476;
+      font-weight: 700;
+    }
+    .card {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      border-radius: 15px 15px 0 0;
+      height: 180px;
+      object-fit: cover;
+    }
+    .btn-add {
+      background-color: #dd2476;
+      color: #fff;
+      border: none;
+      transition: 0.3s;
+      border-radius: 20px;
+    }
+    .btn-add:hover {
+      background-color: #ff512f;
+    }
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">FoodieExpress</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="orders.html">Orders</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <a class="btn btn-light ms-3 fw-semibold" href="cart.html">
+        <i class="bi bi-cart"></i> Cart
+        </a>
+      </div>
+    </div>
+  </nav><br>
+
+  <div class="container">
+    <h2 class="contact-title">📞 Get in Touch with Us</h2>
+    <div class="row g-4 align-items-center">
+      
+      <!-- Contact Form -->
+      <div class="col-md-6">
+        <div class="contact-section">
+          <h5 class="text-center mb-4 fw-semibold">We’d love to hear from you!</h5>
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Full Name</label>
+              <input type="text" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Message</label>
+              <textarea class="form-control" rows="4" placeholder="Write your message..." required></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn-submit">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-6">
+        <div class="row g-4">
+          <div class="col-12">
+            <div class="info-box">
+              <i class="bi bi-geo-alt-fill"></i>
+              <h6>Our Location</h6>
+              <p>FoodieExpress HQ, Hyderabad, India</p>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="info-box">
+              <i class="bi bi-telephone-fill"></i>
+              <h6>Call Us</h6>
+              <p>+91 9542026070</p>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="info-box">
+              <i class="bi bi-envelope-fill"></i>
+              <h6>Email</h6>
+              <p>support@foodieexpress.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
